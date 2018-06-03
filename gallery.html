@@ -49,9 +49,138 @@
         
         
         <section>
+           
             
         </section>
         
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+      <img src="https://media.npr.org/assets/img/2016/05/17/the-monkees_wide-1f3bc50b16a1851423f14dce7d4f2d69038538cd-s900-c85.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+      <img src="https://ticketcrusader.com/wp-content/uploads/2016/02/The-Monkees.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+      <img src="https://s-i.huffpost.com/gen/4685166/images/o-THE-MONKEES-facebook.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+      <img src="http://ultimateclassicrock.com/files/2017/01/more-of-alt.jpg?w=980&q=75" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+      <img src="https://www.morrisonhotelgallery.com/images/medium/Monkees11x14.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+      <img src="https://cdn.cnn.com/cnnnext/dam/assets/121114083915-boy-bands-the-monkees-horizontal-large-gallery.jpg" style="width:100%">
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+      <img src="https://www.morrisonhotelgallery.com/images/big/Monkees1967.jpg" style="width:100%">
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+      <img src="http://stmedia.startribune.com/images/ows_143767123039085.jpg" style="width:100%">
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+      <img src="https://img.wennermedia.com/480-width/rs-227079-monkees-old.jpg" style="width:100%">
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+      <img src="https://www.monkeeslivealmanac.com/uploads/7/8/9/5/7895731/6073041_orig.jpg" style="width:100%">
+  </div>
+  
+ 
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://media.npr.org/assets/img/2016/05/17/the-monkees_wide-1f3bc50b16a1851423f14dce7d4f2d69038538cd-s900-c85.jpg" style="width:100%" onclick="currentSlide(1)" alt="Chicago, 1945">
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="https://ticketcrusader.com/wp-content/uploads/2016/02/The-Monkees.jpg" style="width:100%" onclick="currentSlide(2)" alt="1944">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://s-i.huffpost.com/gen/4685166/images/o-THE-MONKEES-facebook.jpg" style="width:100%" onclick="currentSlide(3)" alt="Los Angeles, 1946">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://ultimateclassicrock.com/files/2017/01/more-of-alt.jpg?w=980&q=75" style="width:100%" onclick="currentSlide(5)" alt="1945">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="https://www.morrisonhotelgallery.com/images/medium/Monkees11x14.jpg" style="width:100%" onclick="currentSlide(6)" alt="New York, 1945">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.cnn.com/cnnnext/dam/assets/121114083915-boy-bands-the-monkees-horizontal-large-gallery.jpg" style="width:100%" onclick="currentSlide(1)" alt="Berlin, 1947">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="https://www.morrisonhotelgallery.com/images/big/Monkees1967.jpg" style="width:100%" onclick="currentSlide(3)" alt="New Mexico">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://stmedia.startribune.com/images/ows_143767123039085.jpg" style="width:100%" onclick="currentSlide(5)" alt="Early Years of the Monkees">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="https://img.wennermedia.com/480-width/rs-227079-monkees-old.jpg" style="width:100%" onclick="currentSlide(6)" alt="1944">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.monkeeslivealmanac.com/uploads/7/8/9/5/7895731/6073041_orig.jpg" style="width:100%" onclick="currentSlide(1)" alt="Roady Club, NYC, 1945">
+    </div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
 
     <footer class="text-center">
