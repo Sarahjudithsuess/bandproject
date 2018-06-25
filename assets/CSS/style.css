@@ -26,18 +26,15 @@
 
 /* Add a dark background color with a little bit see-through */ 
 .navbar {
-    margin-bottom: 0;
     background-color: #2d2d30;
     border: 0;
     font-size: 11px !important;
-    letter-spacing: 6px;
-    padding-left: 0px;
-    padding-right: 0px;
+    letter-spacing: 8px;
+    
 }
 
 .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
+   padding: 0px;
 }
 
 .navbar-collapse {
@@ -49,9 +46,10 @@
     color: white !important;
 }
 
-/* On hover, the links will turn white */
+
+/* On hover, the links will turn green */
 .navbar-nav li a:hover {
-    color: white !important;
+    color: #afdab0 !important;
 }
 
 /* The active link */
@@ -65,38 +63,60 @@
     border-color: transparent;
 }
 
-/* Dropdown */
-.open .dropdown-toggle {
-    color: #fff ;
-    background-color: #555 !important;
-}
+/*--------------------------About section*/
 
-/* Dropdown links */
-.dropdown-menu li a {
-    color: #000 !important;
-}
-
-/*--------------------------footer*/
-
-/* Add a dark background color to the footer */
-footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-}
-
-footer a {
-    color: #f5f5f5;
-}
-
-footer a:hover {
-    color: #777;
-    text-decoration: none;
-}
-
-/*--------------------------contact*/
-header {
+body {
     background-color: #afdab0;
+    color: #0c0c0c;
+    
+}
+
+.about-background {
+    background-color: #afdab0;
+}
+
+.person {
+    border: 50px;
+    margin-bottom: 5px;
+    margin-left: -34px;
+    width: 92%;
+    height: 80%;
+    opacity: 2.7;
+}
+.person:hover {
+    border-color: #afdab0;
+} 
+
+
+/*--------------------------Music*/
+
+.music-background {
+    background-color: #afdab0;
+}
+
+.song {
+    float: left;
+}
+
+.song-description {
+    float: left;
+}
+
+.cover {
+    border: 50px;
+    margin-bottom: 5px;
+    margin-left: -34px;
+    width: 76%;
+    height: 80%;
+    opacity: 4.7;
+}
+
+.header-song {
+    margin-left: -34px;
+}
+
+.player {
+    color: ;
 }
 
 
@@ -111,8 +131,8 @@ header {
   position: relative;
   top: 2%;
   padding: 10px 10px;
-  
 }
+
 
 /* Hide the images by default */
 .mySlides {
@@ -197,8 +217,7 @@ header {
     margin: auto;
     height: 83vh;
     background-size: cover;
-}
-
+} 
 .carousel-caption h3 {
     color: black !important;
 }
@@ -209,36 +228,15 @@ header {
     }
 }
 
-/*--------------------------About section*/
 
-body {
-    background-color: #afdab0;
-    color: #0c0c0c;
-    
-}
 
-.about-background {
+
+/*--------------------------contact*/
+header {
     background-color: #afdab0;
 }
 
-.person {
-    border: 50px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    width: 100%;
-    height: 80%;
-    opacity: 0.7;
-}
-.person:hover {
-    border-color: #afdab0;
-} 
 
-
-/*--------------------------Music*/
-
-.music-background {
-    background-color: #afdab0;
-}
 
 /*--------------------------Social Links*/
 .social-links {
@@ -275,8 +273,26 @@ body {
     
     /*--------------------------Maps*/
   #googleMap {
-    width: 100%; /* Span the entire width of the screen */
-    height: 400px; /* Set the height to 400 pixels */
+    width: 100%; 
+    height: 600px; 
     -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); /* Change the color of the map to black and white * /
+    filter: grayscale(100%); 
+}
+
+/*--------------------------footer*/
+
+/* Add a dark background color to the footer */
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
 }
